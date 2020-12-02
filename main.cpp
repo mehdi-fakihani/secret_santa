@@ -28,7 +28,7 @@ int main()
     std::ofstream output{"draw.txt"};
     for(std::size_t i = 0; i < participants.size(); ++i)
     {
-        std::cout << "Couple #" << i << ": " << participants[i] << " " << partners[i] << std::endl;
-        output << "Couple #" << i << ": " << participants[i] << " " << partners[i] << std::endl;
+        std::cout << "Couple #" << i + 1 << ": " << participants[i] << " " << partners[i] << std::endl;
+        output << "Couple #" << i + 1 << ": " << participants[i] << " " << partners[i] << std::endl;
     }
 }
